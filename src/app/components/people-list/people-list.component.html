@@ -1,0 +1,9 @@
+<div class="people-list">
+  <h2>People List</h2>
+  <div *ngFor="let person of people">
+    <img [src]="person.avatar" alt="Avatar">
+    <p>{{ person.first_name }} {{ person.last_name }}</p>
+    <a [routerLink]="['/people', person.id]">View Details</a>
+    <button (click)="deletePerson(person.id)">🗑️ Delete</button>
+  </div>
+</div>

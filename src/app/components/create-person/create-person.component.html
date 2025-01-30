@@ -1,0 +1,10 @@
+<div class="modal">
+    <h2>Create Person</h2>
+    <input type="text" [(ngModel)]="first_name" placeholder="First Name" required>
+    <input type="text" [(ngModel)]="last_name" placeholder="Last Name" required>
+    <input type="email" [(ngModel)]="email" placeholder="Email" required>
+    <input type="text" [(ngModel)]="job_title" placeholder="Job Title">
+    <input type="text" [(ngModel)]="avatar" placeholder="Avatar URL (Optional)">
+    <button (click)="createPerson()">Create</button>
+  </div>
+  
